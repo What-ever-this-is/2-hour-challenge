@@ -6,7 +6,8 @@ function main(){
     canvas.addEventListener("keyup",keyEvent);
     requestAnimationFrame(gameloop);
     canvas.onclick = function(){
-        playSound(sounds.shoot)
+        game.ready = true;
     }
+    console.log(ctx.measureText("START"))
 }
 window.onload = main;
